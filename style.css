@@ -175,7 +175,34 @@ body{
  /*---------------------------------------------------------------------------\
 |                          content item styling                               |
 \---------------------------------------------------------------------------*/
-.latest-posts{
+.latest-posts-item{
+  padding: 0;
+  background-color: #474747;
+  margin: 10px;
+}
+.latest-posts-item .latest-posts-item-content{
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0,0.2);
+}
+.latest-posts-item .latest-posts-item-content h1{
+  background-color: rgba(0,0,0,0.6);
+  margin: 0;
+  padding: 10px;
+  font-size: 28px;
+}
+.latest-posts-item .latest-posts-item-link{
+  text-decoration: none;
+  cursor: pointer;
+}
+.latest-posts-item .latest-posts-item-content:hover{
+  background-color:  rgba(0, 0, 0, 0);
+}
+/*.latest-posts{
   padding: 0;
 }
 .latest-posts .latest-posts-item{
@@ -237,7 +264,7 @@ body{
 .latest-posts .latest-posts-item a:hover{
   text-decoration: none;
   cursor: pointer;
-}
+}*/
 
 
 
