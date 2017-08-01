@@ -22,7 +22,7 @@ Just remember I probably suck at coding ;)
     color: #e5e5e5 !important;
 }
 body{
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 .container-fluid{
@@ -46,7 +46,6 @@ body{
   .content-wrapper{
     padding: 75px 0 0 0;
     margin: auto;
-    max-width: 80%;
   }
 }
 
@@ -178,7 +177,8 @@ body{
 .latest-posts-item{
   padding: 0;
   background-color: #474747;
-  margin: 10px;
+  margin: 10px 0 10px 0;
+  text-align: center;
 }
 .latest-posts-item .latest-posts-item-content{
   height: 300px;
@@ -202,69 +202,6 @@ body{
 .latest-posts-item .latest-posts-item-content:hover{
   background-color:  rgba(0, 0, 0, 0);
 }
-/*.latest-posts{
-  padding: 0;
-}
-.latest-posts .latest-posts-item{
-  background-color: rgba(50,50,50,0.9);
-  border-radius: 0;
-  border: none;
-  padding: 0;
-  margin: 20px 0 20px 0;
-  text-align: center;
-}
-.thumbnail-title{
-    height: 100px;
-}
-.thumbnail-image .thumbnail{
-  height: 260px !important;
-}
-.thumbnail{
-  overflow: hidden;
-  border: none;
-  padding: 0;
-  margin: 0;
-  border-radius: 0;
-  background: rgba(0,0,0,0);
-}
-@media only screen and (max-width: 1200px) {
-  .thumbnail-image .thumbnail{
-    height: 220px !important;
-  }
-}
-@media only screen and (max-width: 994px) {
-  .thumbnail-image .thumbnail{
-    height: 140px !important;
-  }
-  .thumbnail-title{
-    height: 80px;
-  }
-  .thumbnail-title h1{
-    font-size: 20px !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .thumbnail-image .thumbnail{
-    height: auto !important;
-  }
-  .thumbnail-title{
-    height: auto !important;
-    padding: 5px;
-  }
-}
-.thumbnail-image{
-    padding: 0;
-}
-.latest-posts .latest-posts-item a{
-}
-.latest-posts .latest-posts-item a h1{
-  font-size: 28px;
-  padding: 0 10px 0 10px;
-}
-.latest-posts .latest-posts-item a:hover{
-  text-decoration: none;
-  cursor: pointer;
-}*/
 
 
 
@@ -289,6 +226,11 @@ body{
 }
 .modal .modal-header .thumbnail{
   padding: 20px;
+  overflow: hidden;
+  border: none;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(0,0,0,0);
 }
 .modal .modal-content .modal-body p{
   font-size: 16px;

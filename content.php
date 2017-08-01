@@ -6,7 +6,7 @@
 		$urlImg = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
 		endif;
 	?>
-		<a class="latest-posts-item-link" href="" data-toggle="modal" data-target="#post-detail-<?php the_ID(); ?>">
+		<a class="latest-posts-item-link " href="" data-toggle="modal" data-target="#post-detail-<?php the_ID(); ?>">
 			<div class="latest-posts-item-content" style="background-image: url(<?php echo $urlImg; ?>);">
 				<div class="latest-post-title">
 					<h1>
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</a>
-		
+
 
 		<!--boostrap modal container-->
 		<div class="modal fade <?php post_class('container post-modal'); ?>" id="post-detail-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="purchaseLabel" aria-hidden="true">
@@ -48,4 +48,5 @@
 						</div>
 				</div>
 		</div>
-</article><!--post article container-->
+</article>
+<!--post article container-->
