@@ -67,4 +67,4 @@
 			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 
 			<!-- content outer wrapper -->
-			<div class="content-wrapper">
+			<div class="content-wrapper container">
