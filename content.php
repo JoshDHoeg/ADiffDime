@@ -16,5 +16,4 @@
 			</div>
 		</a>
 
-</article>
-<!--post article container-->
+</article><!--post article container-->

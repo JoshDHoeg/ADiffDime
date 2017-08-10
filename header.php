@@ -20,6 +20,9 @@
 			$awesome_classes = array( 'no-awesome-class' );
 		endif;
 
+		if( !defined(THEME_IMG_PATH)){
+	   define( 'THEME_IMG_PATH', get_stylesheet_directory_uri() . '/images' );
+	  }
 	?>
 
 	<body <?php body_class( $awesome_classes ); ?>>
