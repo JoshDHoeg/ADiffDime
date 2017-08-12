@@ -28,9 +28,22 @@
 	<body <?php body_class( $awesome_classes ); ?>>
 
 
-		<div class="left-nav"><!--navbar container-->
-			<nav class="sidenav" id="sidenav"><!--navbar content-->
-				<div class="sidenav-menu"><!--navbar menu-->
+		<div class="main-sidenav" id="main-sidenav">
+			<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+			<label class="menu-open-button" for="menu-open" onclick="toggleSidenav();">
+				<span class="hamburger hamburger-1"></span>
+				<span class="hamburger hamburger-2"></span>
+				<span class="hamburger hamburger-3"></span>
+			</label>
+			<nav class="sidenav" id="sidenav">
+				<div class="sidenav-brand">
+					<?php
+						$custom_logo_id = get_theme_mod( 'custom_logo' );
+						$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+					?>
+					<a class="sidenav-brand-logo" href="/"><img src="<?php echo $image[0]; ?>"></a>
+				</div>
+				<div class="sidenav-menu">
 					<?php
 						wp_nav_menu(array(
 							'theme_location' => 'primary',
@@ -40,7 +53,7 @@
 						);
 					?>
 				</div>
-				<div class="sidenav-social"><!--navbar social links/widgets-->
+				<div class="sidenav-social">
 					<?php	if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
 					<div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
 						<?php dynamic_sidebar( 'custom-header-widget' ); ?>
@@ -48,20 +61,9 @@
 					<?php endif; ?>
 				</div>
 			</nav>
-			<div class="sidenav-brand"><!--navbar logo-->
-				<?php
-					$custom_logo_id = get_theme_mod( 'custom_logo' );
-					$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-				?>
-				<a class="sidenav-brand-logo" href="/"><img src="<?php echo $image[0]; ?>"></a>
-			</div>
-			<div class="sidenav-toggle" onclick="navclose()" id="navclose">
-					<span>&#8918;</span>
-			</div>
-			<div class="sidenav-toggle" onclick="navopen()" id="navopen">
-					<span>&#8919;</span>
-			</div>
-		</div><!--navbar container-->
+		</div>
+		<div class="cover" onclick="toggleSidenav();"></div>
+
 
 
 		<section class="container-fluid"><!-- background wrapper-->
