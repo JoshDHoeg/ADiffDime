@@ -1,5 +1,11 @@
 <?php get_header(); ?> <!--pull the header template in-->
 
+
+<style>
+
+</style>
+
+
 <!--this is the main feed sectino this is how posts will show up on the main blog page-->
 		<div class="latest-posts container" id="primary">
 			<!--We wanted the content to show up in two seperate columns so column a takes odd umbered post {1,3,5....}-->

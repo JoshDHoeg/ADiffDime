@@ -1,0 +1,25 @@
+@keyframes load {
+  0% 		{ transform: rotate(0deg);}
+  100% 		{ transform: rotate(11520deg);}
+}
+@keyframes loadScreen {
+  0% 		{background-color: #000000}
+  25% 	{background-color: #8c0000}
+  50% 	{background-color: #8c008b}
+  75% 	{background-color: #3a008c}
+  100% 	{background-color: #000000}
+}
+
+
+
+.animate-load{
+  animation-name: load;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.animate-loadScreen{
+  animation-name: loadScreen;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}

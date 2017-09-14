@@ -27,6 +27,9 @@
 
 	<body <?php body_class( $awesome_classes ); ?>>
 
+		<div class="load_Screen animate-loadScreen" id="load_screen"><div class="load_image"><img class="animate-load"src="<?php echo get_stylesheet_directory_uri(); ?>/images/sacred6.png"></div></div>
+
+
 
 		<div class="main-sidenav" id="main-sidenav">
 			<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
