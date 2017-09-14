@@ -487,6 +487,10 @@ form{
 .detail_wrapper .detail_content{
   padding: 40px;
 }
+.detail_wrapper .detail_content img{
+	width: 80%;
+	height: auto;
+}
 .detail_wrapper .detail_footer{
   padding: 20px;
   background: #333333;
