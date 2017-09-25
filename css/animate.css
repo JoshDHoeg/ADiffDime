@@ -18,7 +18,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.animate-loadScreen{
+.animate-loadScreen, .animate-background{
   animation-name: loadScreen;
   animation-duration: 12s;
   animation-iteration-count: infinite;

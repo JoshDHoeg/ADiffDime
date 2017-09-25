@@ -15,9 +15,9 @@
 	<?php
 
 		if( is_front_page() ):
-			$awesome_classes = array( 'awesome-class', 'my-class' );
+			$awesome_classes = array( 'awesome-class', 'my-class', 'animate-background' );
 		else:
-			$awesome_classes = array( 'no-awesome-class' );
+			$awesome_classes = array( 'no-awesome-class', 'animate-background' );
 		endif;
 
 		if( !defined(THEME_IMG_PATH)){
