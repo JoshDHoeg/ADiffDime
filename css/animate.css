@@ -3,11 +3,14 @@
   100% 		{ transform: rotate(11520deg);}
 }
 @keyframes loadScreen {
-  0% 		{background-color: #000000}
-  25% 	{background-color: #8c0000}
-  50% 	{background-color: #8c008b}
-  75% 	{background-color: #3a008c}
-  100% 	{background-color: #000000}
+  0% 	{background-color: rgb(213, 0, 6)}
+  20% 	{background-color: rgb(190, 0, 213)}
+  /*50% 	{background-color: #8c008b}*/
+  40% 	{background-color: rgb(0, 9, 213)}
+  /*100% 	{background-color: #009e31}*/
+  60% 	{background-color: rgb(11, 213, 0)}
+  80% 	{background-color: rgb(213, 115, 0)}
+  100% 	{background-color: rgb(213, 0, 6)}
 }
 
 
@@ -20,6 +23,6 @@
 }
 .animate-loadScreen, .animate-background{
   animation-name: loadScreen;
-  animation-duration: 12s;
+  animation-duration: 32s;
   animation-iteration-count: infinite;
 }

@@ -8,8 +8,8 @@
 		<title>A Different Dimension</title>
 		<?php wp_head(); ?>
 
-
-		<link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet"> -->
 	</head>
 
 	<?php

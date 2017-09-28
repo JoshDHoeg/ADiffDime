@@ -76,3 +76,9 @@ add_theme_support('custom-background');
 add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 add_theme_support('post-formats',array('aside','image','video'));
+
+/* ------- Line Break Shortcode --------*/
+function line_break_shortcode() {
+return '<br />';
+}
+add_shortcode( 'br', 'line_break_shortcode' );
