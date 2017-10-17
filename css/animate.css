@@ -21,8 +21,11 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.animate-loadScreen, .animate-background{
+/*.animate-loadScreen, .animate-background{
   animation-name: loadScreen;
   animation-duration: 32s;
   animation-iteration-count: infinite;
+}*/
+.animate-background{
+  background: #111330;
 }

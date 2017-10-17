@@ -29,15 +29,27 @@
 
 		<div class="load_Screen animate-loadScreen" id="load_screen"><div class="load_image"><img class="animate-load"src="<?php echo get_stylesheet_directory_uri(); ?>/images/sacred6.png"></div></div>
 
-
-
-		<div class="main-sidenav" id="main-sidenav">
-			<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-			<label class="menu-open-button" for="menu-open" onclick="toggleSidenav();">
+		<div  id="sidenav-menus">
+			<input type="checkbox" href="#" class="content-menu-open" name="content-menu-open" id="content-menu-open"/>
+			<label class="menu-open-button" for="content-menu-open" onclick="toggleSidenav(1);" id="content-menu">
 				<span class="hamburger hamburger-1"></span>
 				<span class="hamburger hamburger-2"></span>
 				<span class="hamburger hamburger-3"></span>
+				<span class="tooltiptext">Menu</span>
 			</label>
+			<input type="checkbox" href="#" class="shop-menu-open" name="shop-menu-open" id="shop-menu-open"/>
+			<label class="menu-open-button" for="shop-menu-open" onclick="toggleSidenav(2);" id="shop-menu">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/shop.png" width="20px">
+				<span class="tooltiptext">Shop</span>
+			</label>
+			<input type="checkbox" href="#" class="services-menu-open" name="services-menu-open" id="services-menu-open"/>
+			<label class="menu-open-button" for="services-menu-open" onclick="toggleSidenav(3);" id="services-menu">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/services.png" width="20px">
+				<span class="tooltiptext">Services</span>
+			</label>
+		</div>
+
+		<div class="main-sidenav" id="content-sidenav">
 			<nav class="sidenav" id="sidenav">
 				<div class="sidenav-brand">
 					<?php
@@ -46,16 +58,36 @@
 					?>
 					<a class="sidenav-brand-logo" href="/"><img src="<?php echo $image[0]; ?>"></a>
 				</div>
-				<div class="sidenav-menu">
-					<?php
-						wp_nav_menu(array(
-							'theme_location' => 'primary',
-							'container' => false,
-							'menu_class' => 'nav navbar-nav '
-							)
-						);
-					?>
-				</div>
+					<div class="sidenav-menu" id="sidenav-menu-content">
+ 						<?php
+							wp_nav_menu(array(
+								'theme_location' => 'Content',
+								'container' => false,
+								'menu_class' => 'nav navbar-nav '
+								)
+							);
+						?>
+					</div>
+					<div class="sidenav-menu" id="sidenav-menu-shop">
+ 						<?php
+							wp_nav_menu(array(
+								'theme_location' => 'Shop',
+								'container' => false,
+								'menu_class' => 'nav navbar-nav '
+								)
+							);
+						?>
+					</div>
+					<div class="sidenav-menu" id="sidenav-menu-services">
+ 						<?php
+							wp_nav_menu(array(
+								'theme_location' => 'Services',
+								'container' => false,
+								'menu_class' => 'nav navbar-nav '
+								)
+							);
+						?>
+					</div>
 				<div class="sidenav-social">
 					<?php	if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
 					<div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
@@ -65,7 +97,7 @@
 				</div>
 			</nav>
 		</div>
-		<div class="cover" onclick="toggleSidenav();"></div>
+		<div class="cover" onclick="toggleSidenav(0);"></div>
 
 
 
