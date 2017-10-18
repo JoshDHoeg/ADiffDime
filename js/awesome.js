@@ -17,6 +17,8 @@ function toggleSidenav(menu) {
   var shopBox = document.getElementById('shop-menu-open');
   var servicesBox = document.getElementById('services-menu-open');
 
+  document.body.classList.add('noscroll');
+
   content.classList.remove('active-menu');
   shop.classList.remove('active-menu');
   services.classList.remove('active-menu');
@@ -24,6 +26,7 @@ function toggleSidenav(menu) {
   if(menu == 0){
     console.log("we got cover");
     document.body.classList.remove('left-nav-active');
+    document.body.classList.remove('noscroll');
   }else if(menu == 1){
     console.log("we got content");
     content.classList.add('active-menu');
@@ -42,6 +45,6 @@ function toggleSidenav(menu) {
   shopBox.checked = false;
   servicesBox.checked = false;
 
-  document.body.classList.add('noscroll');
 
-}
+
+};

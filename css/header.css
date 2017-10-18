@@ -77,7 +77,7 @@
    background: #be00d5;
 }
 #sidenav-menus .content-menu-open:checked + #content-menu, #sidenav-menus .shop-menu-open:checked + #shop-menu, #sidenav-menus .services-menu-open:checked + #services-menu{
- background: #242424;
+   background: #242424;
 }
 
 
@@ -217,6 +217,9 @@
 }
 .left-nav-active #sidenav-menus .menu-open-button{
  left: 300px;
+}
+.left-nav-active .main-sidenav{
+  left: 0;
 }
 .left-nav-active .cover{
  background-color: rgba(0,0,0,0.4);
