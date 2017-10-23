@@ -77,7 +77,7 @@
    background: #be00d5;
 }
 #sidenav-menus .content-menu-open:checked + #content-menu, #sidenav-menus .shop-menu-open:checked + #shop-menu, #sidenav-menus .services-menu-open:checked + #services-menu{
-   background: #242424;
+   background: #000;
 }
 
 
@@ -121,7 +121,7 @@
 |                          Main Sidenav styling                               |
 \---------------------------------------------------------------------------*/
 .main-sidenav{
- background: #242424;
+ background: #000;
  position: fixed;
  height: 100%;
  width: 300px;
@@ -131,21 +131,47 @@
  transition: ease-in-out 0.5s;
 }
 .main-sidenav .sidenav{
- padding-top: 30%;
+ padding-top: 0;
+}
+.main-sidenav .sidenav .sidenav-brand{
+  border-top: 1px solid #333333;
+  /*border-bottom: 1px solid #333333;*/
 }
 .main-sidenav .sidenav .sidenav-brand img{
- width: 200px;
+ width: 240px;
  display: block;
  margin: auto;
+ padding: 20px;
 }
 .main-sidenav .sidenav .sidenav-menu{
  display: none;
 }
-.main-sidenav .sidenav .sidenav-social{
+.main-sidenav .sidenav .sidenav-search{
+  width: 100%;
+  padding: 0;
+}
+.main-sidenav .sidenav .sidenav-search .searchform{
+  height: 64px;
+  background: #000000;
+}
+.main-sidenav .sidenav .sidenav-search .searchform .search-bar{
+  height: 64px;
+  width: 230px;
+  float: left;
+  background: #000000;
+  border: none;
+}
+.main-sidenav .sidenav .sidenav-search .searchform .search-img{
+  height: 32px;
+  width: 32px;
+  margin: 16px;
+  float: right;
+}
+/*.main-sidenav .sidenav .sidenav-social{
  position: absolute;
  bottom: 0;
  width: 100%;
-}
+}*/
 .main-sidenav .sidenav .sidenav-social .social-link{
  display: inline;
 }
@@ -186,21 +212,34 @@
 .main-sidenav .active-menu{
  display: block !important;
 }
+.main-sidenav .sidenav .sidenav-menu h2{
+  color: #bbbbbb;
+  font-size: 24px;
+  border-bottom: 1px solid #333;
+  max-width: 80%;
+  display: block;
+  margin: auto;
+  padding: 20px 0 10px 0;
+}
 .main-sidenav .sidenav .active-menu li{
  display: block;
  width: 300px;
+ padding: 4px;
 }
 .main-sidenav .sidenav .active-menu li a{
- font-size: 24px;
- transition: ease-in-out 0.8s;
+ font-size: 18px;
+ color: #999999;
+}
+.main-sidenav .sidenav .active-menu .sidenav-social li a:hover,.main-sidenav .sidenav .active-menu .sidenav-social li a:active, .main-sidenav .sidenav .active-menu .sidenav-social li a:focus{
+  background: none !important;
+  color: #337ab7;
 }
 .main-sidenav .sidenav .active-menu li a:hover,.main-sidenav .sidenav .active-menu li a:active, .main-sidenav .sidenav .active-menu li a:focus{
- font-size: 20px;
+ font-size: 18px;
  background-color: #202020;
- -webkit-box-shadow: inset -8px -2px 10px 3px rgba(0,0,0,0.5);
- -moz-box-shadow: inset -8px -2px 10px 3px rgba(0,0,0,0.5);
- box-shadow: inset -8px -2px 10px 3px rgba(0,0,0,0.5);
  transition: ease-in-out 0.4s;
+ color: #999999;
+ text-decoration: none;
 }
 
 
@@ -242,9 +281,6 @@
    width: 100% !important;
    left: -100%;
  }
- .main-sidenav .sidenav{
-   padding-top: 20px;
- }
  .left-nav-active #content-sidenav{
    left: 0px;
  }
@@ -258,5 +294,12 @@
  }
  .main-sidenav .sidenav .active-menu li{
    width: 100%;
+ }
+ .left-nav-active #sidenav-menus .menu-open-button{
+  left: 100%;
+  margin-left: -64px !important;
+ }
+ .main-sidenav .sidenav .sidenav-search{
+  padding-right: 64px;
  }
 }

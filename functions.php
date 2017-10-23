@@ -9,6 +9,7 @@ function awesome_script_enqueue() {
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7', 'all');
 	wp_enqueue_style('animation', get_template_directory_uri() . '/css/animate.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('header', get_template_directory_uri() . '/css/header.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('index', get_template_directory_uri() . '/css/index.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('customstyle', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
 
 	//js
@@ -84,9 +85,5 @@ add_theme_support('post-formats',array('aside','image','video'));
 function line_break_shortcode() {
 return '<br />';
 }
-function qustion_shortcode(){
-	return '<h1>crazy shit just happened</h1>'
-}
 
-add_shortcode( 'q', 'question_shortcode' );
 add_shortcode( 'br', 'line_break_shortcode' );

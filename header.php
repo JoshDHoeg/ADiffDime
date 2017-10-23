@@ -51,6 +51,9 @@
 
 		<div class="main-sidenav" id="content-sidenav">
 			<nav class="sidenav" id="sidenav">
+				<div class="sidenav-search">
+					<?php get_search_form(); ?>
+				</div>
 				<div class="sidenav-brand">
 					<?php
 						$custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -59,7 +62,14 @@
 					<a class="sidenav-brand-logo" href="/"><img src="<?php echo $image[0]; ?>"></a>
 				</div>
 					<div class="sidenav-menu" id="sidenav-menu-content">
- 						<?php
+						<div class="sidenav-social">
+							<?php	if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
+							<div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
+								<?php dynamic_sidebar( 'custom-header-widget' ); ?>
+							</div>
+							<?php endif; ?>
+						</div>
+						<?php
 							wp_nav_menu(array(
 								'theme_location' => 'Content',
 								'container' => false,
@@ -88,13 +98,6 @@
 							);
 						?>
 					</div>
-				<div class="sidenav-social">
-					<?php	if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
-					<div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
-						<?php dynamic_sidebar( 'custom-header-widget' ); ?>
-					</div>
-					<?php endif; ?>
-				</div>
 			</nav>
 		</div>
 		<div class="cover" onclick="toggleSidenav(0);"></div>
