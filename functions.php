@@ -10,6 +10,7 @@ function awesome_script_enqueue() {
 	wp_enqueue_style('animation', get_template_directory_uri() . '/css/animate.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('header', get_template_directory_uri() . '/css/header.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('index', get_template_directory_uri() . '/css/index.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('interview', get_template_directory_uri() . '/css/interview.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('customstyle', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
 
 	//js
@@ -80,6 +81,31 @@ add_theme_support('custom-background');
 add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 add_theme_support('post-formats',array('aside','image','video'));
+
+/* ------- question start Shortcode --------*/
+function question_shortcode() {
+return '<div class="interview_question">';
+}
+add_shortcode( 'q_start', 'question_shortcode' );
+
+/* ------- question end Shortcode --------*/
+function question_end_shortcode() {
+return '</div>';
+}
+add_shortcode( 'q_end', 'question_end_shortcode' );
+
+/* ------- answer start Shortcode --------*/
+function answer_shortcode() {
+return '<div class="interview_answer">';
+}
+add_shortcode( 'a_start', 'answer_shortcode' );
+
+/* ------- answer end Shortcode --------*/
+function answer_end_shortcode() {
+return '</div>';
+}
+add_shortcode( 'a_end', 'answer_end_shortcode' );
+
 
 /* ------- Line Break Shortcode --------*/
 function line_break_shortcode() {

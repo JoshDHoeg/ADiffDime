@@ -160,6 +160,7 @@
   float: left;
   background: #000000;
   border: none;
+  padding: 20px;
 }
 .main-sidenav .sidenav .sidenav-search .searchform .search-img{
   height: 32px;
@@ -167,11 +168,6 @@
   margin: 16px;
   float: right;
 }
-/*.main-sidenav .sidenav .sidenav-social{
- position: absolute;
- bottom: 0;
- width: 100%;
-}*/
 .main-sidenav .sidenav .sidenav-social .social-link{
  display: inline;
 }
