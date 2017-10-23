@@ -1,13 +1,13 @@
 .interview #main .interview_question{
-  color: #ffffff;
+  color: #eeeeee;
   font-size: 20px;
   padding: 10px;
 }
 .interview #main .interview_answer{
-  color: #bbbbbb;
+  color: #b1b1b1;
   font-size: 16px;
   padding: 10px;
 }
-.interview #main .interview_answer strong{
-  color: #ffffff;
+.interview #main .interview_answer strong, .interview #main .interview_question strong{
+  color: #eeeeee;
 }

@@ -102,7 +102,7 @@ add_shortcode( 'a_start', 'answer_shortcode' );
 
 /* ------- answer end Shortcode --------*/
 function answer_end_shortcode() {
-return '</div>';
+return '</div> <br />';
 }
 add_shortcode( 'a_end', 'answer_end_shortcode' );
 

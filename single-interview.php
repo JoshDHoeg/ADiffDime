@@ -12,9 +12,6 @@
  */
 
 get_header(); ?>
-
-  <h1>this is an interview</h1>
-
     <div id="primary" class="content-area interview">
         <main id="main" class="site-main" role="main">
 
