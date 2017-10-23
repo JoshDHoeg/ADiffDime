@@ -84,4 +84,9 @@ add_theme_support('post-formats',array('aside','image','video'));
 function line_break_shortcode() {
 return '<br />';
 }
+function qustion_shortcode(){
+	return '<h1>crazy shit just happened</h1>'
+}
+
+add_shortcode( 'q', 'question_shortcode' );
 add_shortcode( 'br', 'line_break_shortcode' );

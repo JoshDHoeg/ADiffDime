@@ -154,58 +154,6 @@ form{
 
 
 
- /*---------------------------------------------------------------------------\
-|                          content item styling                               |
-\---------------------------------------------------------------------------*/
-.latest-posts{
-  padding: 20px;
-}
-.latest-posts-item{
-  padding: 0;
-  background-color: #000000;
-  margin: 10px 0 10px 0;
-  text-align: center;
-}
-.latest-posts-item .latest-posts-item-content{
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  background-blend-mode: overlay;
-  background-color: rgba(0,0,0,0.2);
-}
-.latest-posts-item .latest-posts-item-content h1{
-  background-color: rgba(0,0,0,0.6);
-  margin: 0;
-  padding: 10px;
-  font-size: 28px;
-  visibility: hidden;
-  opacity: 0;
-  transition: ease-in-out 0.4s;
-}
-.latest-posts-item .latest-posts-item-link{
-  text-decoration: none;
-  cursor: pointer;
-}
-.latest-posts-item .latest-posts-item-content:hover h1{
-  visibility: visible;
-  opacity: 1;
-  transition: ease-in-out 0.4s;
-}
-.latest-posts-item .latest-post-title-sm h1{
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .latest-post-title-sm h1{
-    display: block !important;
-  }
-  .latest-posts-item .latest-posts-item-content:hover h1{
-    visibility: hidden;
-  }
-}
-
-
 
 
  /*---------------------------------------------------------------------------\
