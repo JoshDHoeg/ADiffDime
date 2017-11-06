@@ -6,6 +6,9 @@
 		</section><!-- background wrapper-->
 
 	<?php wp_footer(); ?>
+		<script>
+			new WOW().init();
+		</script>
 
 	</body>
 </html>

@@ -1,6 +1,6 @@
 <!--the detail view template for a post-->
 
-<div class="container col-xs-12 detail_wrapper shadow">
+<div class="container col-xs-12 detail_wrapper shadow zoomIn wow animated">
 
 	<a  class="exitbtn right" href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/close.png" width="20px"></a>
 	<div class="detail_header">

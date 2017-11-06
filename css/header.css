@@ -41,15 +41,15 @@
 }
 #sidenav-menus #content-menu{
  top: 0;
- background: #d50006;
+ background: #000;
 }
 #sidenav-menus #shop-menu{
  top: 64px;
- background: #d57300;
+ background: #000;
 }
 #sidenav-menus #services-menu{
  top: 128px;
- background: #be00d5;
+ background: #000;
 }
 #sidenav-menus .menu-open-button .tooltiptext {
    height: 64px;
@@ -68,16 +68,16 @@
  opacity: 1;
 }
 #sidenav-menus #content-menu:hover .tooltiptext {
-   background: #d50006;
+   background: #000;
 }
 #sidenav-menus #shop-menu:hover .tooltiptext {
-   background: #d57300;
+   background: #000;
 }
 #sidenav-menus #services-menu:hover .tooltiptext {
-   background: #be00d5;
+   background: #000;
 }
 #sidenav-menus .content-menu-open:checked + #content-menu, #sidenav-menus .shop-menu-open:checked + #shop-menu, #sidenav-menus .services-menu-open:checked + #services-menu{
-   background: #000;
+   background: #060f59;
 }
 
 
