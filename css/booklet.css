@@ -1,0 +1,49 @@
+.front-side {
+    transform: translateZ(-500px) rotateY(  0deg) translateZ(500px);
+    background: gray;
+}
+
+.left-side {
+    transform: translateZ(-500px) rotateY(-90deg) translateZ(500px);
+    background: black;
+}
+
+.right-side {
+    transform: translateZ(-500px) rotateY( 90deg) translateZ(500px);
+    background: white;
+}
+.left-side,.front-side,.right-side {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+.booklet .container-box {
+    position:relative;
+    perspective: 1000;
+    width: 1000px;
+    margin: auto;
+}
+
+.box_button{
+  position: fixed;
+  top: 0;
+  right: 100px;
+}
+.exitbtn .close-btn{
+  height: 4px;
+  width: 24px;
+  background: #fff;
+  position: absolute;
+  right: 8px;
+}
+.exitbtn .close-btn:nth-child(1){
+  transform: rotate(45deg);
+}
+.exitbtn .close-btn:nth-child(2){
+  transform: rotate(-45deg);
+}

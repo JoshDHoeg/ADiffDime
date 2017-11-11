@@ -18,6 +18,7 @@ function awesome_script_enqueue() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.7', true);
 	wp_enqueue_script('wowjs', get_template_directory_uri() . '/js/wow.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('box-transition', get_template_directory_uri() . '/js/box-transition.js', array(), '1.0.0', true);
 	wp_enqueue_script('customjs', get_template_directory_uri() . '/js/awesome.js', array(), '1.0.0', true);
 
 }
@@ -84,6 +85,7 @@ add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 add_theme_support('post-formats',array('aside','image','video'));
 
+
 /* ------- question start Shortcode --------*/
 function question_shortcode() {
 return '<div class="interview_question interview_box zoomInRight wow animated">';
@@ -104,10 +106,22 @@ add_shortcode( 'a_start', 'answer_shortcode' );
 
 /* ------- answer end Shortcode --------*/
 function answer_end_shortcode() {
-return '</div><br />';
+return '</div><br/>';
 }
 add_shortcode( 'a_end', 'answer_end_shortcode' );
 
+
+
+function box_page_break_shortcode( $atts ){
+	$a = shortcode_atts( array(
+	        'foo' => '0',
+	        'bar' => 'something else',
+	    ), $atts );
+
+	    return "</div><div class='detail_footer'><button type='button' class='close-btn' onclick='window.location.href='/''>Close</button></div></div></section><section class='right-side' id='{$a['foo']}'><div class='container col-xs-12 detail_wrapper shadow zoomIn wow animated'><a  class='exitbtn right' href='/'><div class='close-btn'></div><div class='close-btn'></div></a><div class='detail_content'>";
+	// return '</section><section id="" class="right-side">';
+}
+add_shortcode('box_page','box_page_break_shortcode');
 
 /* ------- Line Break Shortcode --------*/
 function line_break_shortcode() {

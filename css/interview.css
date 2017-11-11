@@ -10,7 +10,7 @@
 }
 .interview .detail_wrapper .detail_content{
   background: #eeeeee;
-  color: #000000;
+  color: #000000 !important;
 }
 .interview #main .interview_box{
   margin: 20px auto;
