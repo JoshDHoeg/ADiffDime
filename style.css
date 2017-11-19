@@ -47,9 +47,18 @@ a{
 a:hover{
   color: #ddd;
 }
+.aligncenter, .alignleft, .alignright{
+  padding: 20px;
+}
 .aligncenter{
   display: block;
   margin: auto;
+}
+.alignright{
+  float: right;
+}
+.alignleft{
+  float: left;
 }
 .detail_content{
   color: #b1b1b1;
@@ -264,8 +273,7 @@ a:hover{
   padding: 10px 120px 360px 120px;
 }
 .detail_wrapper .detail_content img{
-	width: 80%;
-	height: auto;
+
 }
 .detail_wrapper .detail_footer .close-btn, .wpcf7-submit, .woocommerce-form .woocommerce-form-row .woocommerce-Button{
   display: block;
