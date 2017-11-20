@@ -7,8 +7,6 @@
  * @package WordPress
  * @subpackage Dimension Theme
  * @since Dimension 0.2.0
- * @subpackage Dimension Theme
- * @since Dimension 0.2.0
  */
 
 get_header(); ?>
@@ -24,6 +22,7 @@ get_header(); ?>
 
                     <div class="thumbnail">
                       <?php the_post_thumbnail('small'); ?>
+
                     </div>
 
                   </div>

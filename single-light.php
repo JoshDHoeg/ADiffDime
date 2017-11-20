@@ -1,7 +1,9 @@
 <?php
 /**
- * The template for displaying all single posts and attachments
+ * The template is the lighter version of the default template to test out different color schemes
  *
+ * Template Name: Default_light
+ * Template Post Type: post, page, product
  * @package WordPress
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
@@ -10,7 +12,7 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
-        <main id="main" class="site-main default_dark" role="main">
+        <main id="main" class="site-main default_light" role="main">
 
         <?php
         // Start the loop.

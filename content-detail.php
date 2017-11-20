@@ -6,7 +6,7 @@
 
 	<div class="detail_header">
 		<a href="/"> Home </a>
-		>
+		<p style="display:inline">></p>
 		<a href="/"><?php the_category(); ?></a>
 	</div>
 	<div class="detail_intro row">

@@ -60,30 +60,8 @@ a:hover{
 .alignleft{
   float: left;
 }
-.detail_content{
-  color: #b1b1b1;
-  letter-spacing: 2.5px;
-  line-height: 200%;
-}
-.detail_content p{
-  font-size: 16px;
-}
-.detail_content blockquote{
-  color:  #999999;
-}
-.content-wrapper{
-  padding: 20px;
-  position: relative;
-}
-@media only screen and (max-width: 768px) {
-  .content-wrapper{
-    padding: 75px 0 0 0;
-    margin: auto;
-  }
-  iframe{
-    max-width: 100%;
-  }
-}
+
+
 /*scrollbar*/
 ::-webkit-scrollbar{height: 10px; width: 10px;background: #000000;}
 ::-webkit-scrollbar-track{background: #161616; margin: 1px;}
@@ -207,95 +185,6 @@ a:hover{
 
 
 
- /*---------------------------------------------------------------------------\
-|                      single post view styling                               |
-\---------------------------------------------------------------------------*/
-.content-area{
-  padding: 20px;
-}
-.detail_wrapper{
-  background: #111111;
-  margin-bottom: 20px;
-  padding: 0;
-}
-.exitbtn{
-  font: 30px;
-  position: absolute;
-  padding: 20px;
-  top: 0;
-  right: 0;
-  transition: ease-in-out 0.8s;
-  z-index: 5;
-}
-.exitbtn:hover{
-  -webkit-box-shadow: -8px 4px 10px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: -8px 4px 10px 0px rgba(0,0,0,0.5);
-  box-shadow: -8px 4px 10px 0px rgba(0,0,0,0.5);
-  transition: ease-in-out 0.4s;
-}
-.detail_wrapper .detail_header{
-  padding:20px;
-  background: #222222;
-  -webkit-box-shadow: 0 8px 10px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 8px 10px 0px rgba(0,0,0,0.5);
-  box-shadow: 0 8px 10px 0px rgba(0,0,0,0.5);
-  text-align: left;
-  font-size: 20px;
-}
-.detail_wrapper .detail_header .post-categories{
-  list-style: none;
-  display: inline-block;
-}
-.page .detail_header{
-  padding-bottom: 0;
-}
-.detail_wrapper .detail_intro{
-  padding: 30px 60px 30px 60px;
-}
-.detail_wrapper .detail_intro h1{
-  margin: 0;
-  width: 100%;
-  position: relative;
-  color: #e3e3e3;
-}
-.detail_wrapper .detail_intro p{
-  padding: 6px 0;
-}
-.detail_wrapper .detail_intro .thumbnail{
-  background: #111;
-  border: none;
-  padding: 0;
-  margin: 0;
-  border-radius: none !important;
-  width: 100%;
-}
-.detail_wrapper .detail_content{
-  padding: 10px 120px 360px 120px;
-}
-.detail_wrapper .detail_content img{
-
-}
-.detail_wrapper .detail_footer .close-btn, .wpcf7-submit, .woocommerce-form .woocommerce-form-row .woocommerce-Button{
-  display: block;
-  color: #ffffff !important;
-  margin: auto;
-  background: #242424;
-  border: none;
-  padding: 16px;
-  transition: ease-in-out 0.8s;
-}
-.the_champ_sharing_container{
-  border-top: 1px solid #777777;
-  padding: 10px 0;
-}
-/*.the_champ_sharing_container .the_champ_sharing_title{
-  display: inline;
-  margin: 20px;
-  font-size: 30px;
-}
- .the_champ_sharing_container .the_champ_sharing_ul{
-  display: inline-block;
-}*/
 
 
 
@@ -306,6 +195,15 @@ a:hover{
 
 
 
+.wpcf7-submit, .woocommerce-form .woocommerce-form-row .woocommerce-Button{
+ display: block;
+ color: #ffffff !important;
+ margin: auto;
+ background: #242424;
+ border: none;
+ padding: 16px;
+ transition: ease-in-out 0.8s;
+}
 .wpcf7-submit{
   background: #333333;
   -webkit-box-shadow: none;

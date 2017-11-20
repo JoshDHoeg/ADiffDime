@@ -1,0 +1,230 @@
+.content-wrapper{
+  padding: 20px;
+  position: relative;
+}
+.content-wrapper .content-area{
+ padding: 20px;
+}
+.content-wrapper .content-area .detail_wrapper{
+ margin-bottom: 20px;
+ padding: 0;
+}
+.content-wrapper .content-area .detail_wrapper .detail_content{
+  padding: 10px 120px 360px 120px;
+  letter-spacing: 2.5px;
+  line-height: 200%;
+}
+.content-wrapper .content-area .detail_wrapper .detail_content p{
+  font-size: 16px;
+}
+.content-wrapper .content-area .detail_wrapper .detail_header{
+ padding: 12px;
+ -webkit-box-shadow: 0 8px 10px 0px rgba(0,0,0,0.5);
+ -moz-box-shadow: 0 8px 10px 0px rgba(0,0,0,0.5);
+ box-shadow: 0 8px 10px 0px rgba(0,0,0,0.5);
+ text-align: left;
+ font-size: 24px;
+ height: 62px;
+}
+.content-wrapper .content-area .detail_wrapper .detail_header .post-categories{
+ list-style: none;
+ display: inline-block;
+}
+.content-wrapper .content-area .detail_wrapper .detail_intro{
+ padding: 30px 60px 30px 60px;
+}
+.content-wrapper .content-area .detail_wrapper .detail_intro h1{
+ margin: 0;
+ width: 100%;
+ position: relative;
+}
+.content-wrapper .content-area .detail_wrapper .detail_intro p{
+ padding: 6px 0;
+}
+.content-wrapper .content-area .detail_wrapper .detail_intro .thumbnail{
+ border: none;
+ padding: 0;
+ margin: 0;
+ border-radius: none !important;
+ width: 100%;
+}
+.content-wrapper .content-area .detail_wrapper .detail_footer .close-btn{
+ display: block;
+ margin: auto;
+ border: none;
+ padding: 16px;
+ transition: ease-in-out 0.8s;
+}
+.content-wrapper .content-area .detail_wrapper .related-posts {
+  width: 100%;
+  margin: 0;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  -webkit-box-shadow: 0 -8px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 -8px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0 -8px 10px 0px rgba(0,0,0,0.5);
+}
+.content-wrapper .content-area .detail_wrapper .related-posts h3 {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+.content-wrapper .content-area .detail_wrapper .related-posts .related-thumb{
+  padding: 0;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  float: left;
+}
+.content-wrapper .content-area .detail_wrapper .related-posts .related-thumb img {
+  margin: auto;
+  padding: 0;
+}
+.content-wrapper .content-area .detail_wrapper .related-posts .related-thumb .related-link{
+  text-decoration: none;
+  cursor: pointer;
+}
+.content-wrapper .content-area .detail_wrapper .related-posts .related-thumb .related-link .related-content{
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0,0.2);
+  margin: 20px;
+}
+.content-wrapper .content-area .detail_wrapper .related-posts .related-thumb .related-link .related-content h1{
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.4s;
+}
+.content-wrapper .content-area .detail_wrapper .related-posts .related-thumb .related-link .related-content:hover h1{
+  visibility: visible;
+  opacity: 1;
+  transition: ease-in-out 0.4s;
+}
+
+
+
+
+
+.content-wrapper .content-area .default_dark .detail_wrapper{
+  background: #111111;
+}
+.content-wrapper .content-area .default_dark .detail_wrapper .detail_content{
+  color: #b1b1b1;
+}
+.content-wrapper .content-area .default_dark .detail_wrapper .detail_content blockquote{
+  color:  #999999;
+}
+.content-wrapper .content-area .default_dark  .detail_wrapper .detail_header{
+  background: #222222;
+}
+.content-wrapper .content-area .default_dark .detail_wrapper .detail_intro h1{
+  color: #e3e3e3;
+}
+.content-wrapper .content-area .default_dark .detail_wrapper .detail_intro .thumbnail{
+  background: #111111;
+}
+.content-wrapper .content-area .default_dark .detail_wrapper .detail_footer .close-btn{
+  color: #ffffff;
+  background: #242424;
+}
+.content-wrapper .content-area .default_dark .detail_wrapper  .the_champ_sharing_container{
+ border-top: 1px solid #777777;
+ padding: 10px 0;
+}
+.content-wrapper .content-area .default_dark .detail_wrapper .related-posts {
+  background: #222222;
+}
+.content-wrapper .content-area .default_dark .detail_wrapper .related-posts .related-thumb .related-link .related-content h1{
+  background-color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+.content-wrapper .content-area .default_light .detail_wrapper{
+  background: #eeeeee;
+}
+.content-wrapper .content-area .default_light .detail_wrapper *{
+  color: #222222;
+}
+.content-wrapper .content-area .default_light .detail_wrapper .detail_content{
+  color: #222222;
+}
+.content-wrapper .content-area .default_light .detail_wrapper .detail_content blockquote{
+  color:  #111111;
+}
+.content-wrapper .content-area .default_light  .detail_wrapper .detail_header{
+  background: #bbbbbb;
+}
+.content-wrapper .content-area .default_light  .detail_wrapper .detail_header *{
+  color: #eeeeee;
+}
+.content-wrapper .content-area .default_light .detail_wrapper .detail_intro h1{
+  color: #222222;
+}
+.content-wrapper .content-area .default_light .detail_wrapper .detail_intro .thumbnail{
+  background: #eeeeee;
+}
+.content-wrapper .content-area .default_light .detail_wrapper .detail_footer .close-btn{
+  color: #111111;
+  background: #dddddd;
+}
+.content-wrapper .content-area .default_light .detail_wrapper  .the_champ_sharing_container{
+ border-top: 1px solid #777777;
+ padding: 10px 0;
+}
+.content-wrapper .content-area .default_light .detail_wrapper .related-posts {
+  background: #bbbbbb;
+}
+.content-wrapper .content-area .default_light .detail_wrapper .related-posts .related-thumb .related-link .related-content h1{
+  background-color: rgba(256,256,257,0.6);
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .content-wrapper{
+    padding: 75px 0 0 0;
+    margin: auto;
+  }
+  iframe{
+    max-width: 100%;
+  }
+}
+
+
+/*---------------------------------------------------------------------------\
+|                      single post view styling                               |
+\---------------------------------------------------------------------------*/
+
+
+.exitbtn{
+ font: 30px;
+ position: absolute;
+ padding: 20px;
+ top: 0;
+ right: 0;
+ transition: ease-in-out 0.8s;
+ z-index: 5;
+}
+.exitbtn:hover{
+ -webkit-box-shadow: -8px 4px 10px 0px rgba(0,0,0,0.5);
+ -moz-box-shadow: -8px 4px 10px 0px rgba(0,0,0,0.5);
+ box-shadow: -8px 4px 10px 0px rgba(0,0,0,0.5);
+ transition: ease-in-out 0.4s;
+}
