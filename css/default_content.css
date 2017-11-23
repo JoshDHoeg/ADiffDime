@@ -9,6 +9,9 @@
  margin-bottom: 20px;
  padding: 0;
 }
+.content-wrapper .content-area .detail_wrapper iframe{
+  max-width: 100%;
+}
 .content-wrapper .content-area .detail_wrapper .detail_content{
   padding: 10px 120px 360px 120px;
   letter-spacing: 2.5px;
