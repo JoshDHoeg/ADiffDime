@@ -50,7 +50,7 @@
 		  $my_query->the_post();
 		  ?>
 
-		  <div class="related-thumb col-sm-3">
+		  <div class="related-thumb col-sm-3 col-xs-12">
 				<?php
 					if( has_post_thumbnail() ):
 					$urlImg = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );

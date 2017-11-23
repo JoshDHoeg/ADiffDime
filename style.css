@@ -39,6 +39,9 @@ form{
 hr{
   border-color: #777777;
 }
+strong{
+  font-weight: 1000;
+}
 a{
   text-decoration: none !important;
   cursor: pointer;
