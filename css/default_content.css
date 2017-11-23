@@ -209,14 +209,15 @@
   iframe{
     max-width: 100%;
   }
-}
-@media only screen and (max-width: 768px) {
   .content-wrapper .content-area .detail_wrapper .detail_intro{
     padding-left: 30px;
     padding-right: 30px;
   }
   .content-wrapper .content-area .detail_wrapper .detail_content{
     padding: 10px 30px 1000px 30px;
+  }
+  .content-wrapper .content-area{
+   padding: 0;
   }
 }
 
