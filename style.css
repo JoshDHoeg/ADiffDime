@@ -3,7 +3,7 @@
 	Author: Josh Hoeg
 	Author URI: http://joshdhoeg.com
 	Description: This is a theme designed for a company called A Different Dimension, it should be responsive to all devices. The theme should have give the impression of being from a different dimension and refrain from being like any other regular wordpress theme.
-	Version: 0.2.2 alpha
+	Version: 0.2.3 alpha
 	Tags: black, responsive, one-column, two-columns, featured-images, custom-menu, custom-header, post-formats, sidenav
   GitHub Theme URI: https://github.com/JoshDHoeg/ADiffDime
   Github Branch: master
@@ -63,6 +63,31 @@ a:hover{
 .alignleft{
   float: left;
 }
+
+
+.page .thumbnail{
+	display: none;
+}
+.page .col-sm-6:nth-child(2){
+	width: 100%;
+	text-align:center;
+}
+.page .col-sm-6:nth-child(2) p{
+	display:none;
+}
+.page .detail_wrapper .detail_content{
+padding-bottom: 100px;
+
+}
+.page .detail_wrapper .related-posts{
+		display:none;
+}
+
+.page .detail_wrapper .detail_content .the_champ_horizontal_sharing{
+display: none;
+}
+
+
 
 
 /*scrollbar*/

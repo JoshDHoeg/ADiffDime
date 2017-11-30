@@ -1,17 +1,12 @@
 <?php
-/**
- * The template is the lighter version of the default template to test out different color schemes
- *
- * Template Name: Default_light
- * Template Post Type: post, product
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
+
+/*
+	Template Name: Page Light
+*/
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
+    <div id="primary" class="page page_light content-area">
         <main id="main" class="site-main default_light" role="main">
 
         <?php
