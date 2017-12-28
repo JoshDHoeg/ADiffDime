@@ -90,8 +90,14 @@ padding: 20px;
     padding: 10px;
   }
   #WC-content .product_loop .product .product_image{
-    width: 110px;
+    margin: auto;
     height: 110px;
+    width: 110px;
+  }
+  #WC-content .product_loop .product .product_image img{
+    margin: auto;
+    height: 110px;
+    width: 110px;
   }
   #WC-content .product_loop .product .button{
     margin:16px 0;
