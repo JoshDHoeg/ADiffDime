@@ -28,9 +28,15 @@ padding: 20px;
   padding-top: 36px;
 }
 #WC-content .product_loop .product .product_image{
-  margin: auto;
-  width: 200px;
+  margin: 0;
   height: 200px;
+}
+#WC-content .product_loop .product .product_image img{
+  margin: auto;
+  height: 200px;
+}
+.woocommerce-page #shop-menu > img, .woocommerce-page #services-menu > img{
+  padding-top: 22px;
 }
 #WC-content .product_loop .product{
   padding-bottom: 20px;
