@@ -2,7 +2,7 @@
 /**
  * The template is the lighter version of the default template to test out different color schemes
  *
- * Template Name: Default_light
+ * Template Name: Post Light
  * Template Post Type: post, product
  * @package WordPress
  * @subpackage Twenty_Fifteen

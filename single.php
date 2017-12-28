@@ -2,6 +2,8 @@
 /**
  * The template for displaying all single posts and attachments
  *
+ * Template Name: Post Dark
+ * Template Post Type: post, product
  * @package WordPress
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0

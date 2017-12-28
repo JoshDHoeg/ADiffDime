@@ -1,0 +1,93 @@
+#WC-content .woocommerce-products-header .exitbtn{
+  display: none;
+}
+#WC-content .woocommerce-products-header h1{
+background: #242424 !important;
+margin: 0 auto;
+padding: 20px;
+}
+#WC-content .before-products{
+  background: #242424 !important;
+  height: 64px;
+  padding: 10px 20px 20px;
+  border-top: 1px solid #333333;
+}
+#WC-content .woocommerce-breadcrumb {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+#WC-content .detail_wrapper ul{
+  list-style: none;
+    text-align: center;
+}
+#WC-content .product .woocommerce-loop-product__title{
+  font-size: 16px;
+}
+#WC-content .product_loop{
+  padding-top: 36px;
+}
+#WC-content .product_loop .product .product_image{
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+#WC-content .product_loop .product{
+  padding-bottom: 20px;
+}
+#WC-content .product_loop .product h2{
+  height: 54px;
+}
+#WC-content .product_loop .product .button{
+  margin: 16px;
+}
+#WC-content .orderby{
+  background: #242424;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: inset 0 8px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0 8px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: inset 0 8px 10px 0px rgba(0,0,0,0.5);
+}
+#WC-content .orderby .input-text{
+  background: #333333;
+  color: #e5e5e5 !important;
+  display: inline;
+}
+#WC-content .orderby option:hover{
+  background: #000000 !important;
+}
+
+
+@media only screen and (max-width: 520px) {
+  #WC-content .product_loop .product .product_image{
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #WC-content .product_loop{
+    padding: 36px 0;
+  }
+  #WC-content .before-products{
+    height: 96px;
+  }
+  #WC-content .product_loop .price{
+    font-size: 12px;
+    height: 40px;
+  }
+  #WC-content .product .woocommerce-loop-product__title{
+    font-size: 14px;
+  }
+  #WC-content .product_loop .product{
+    padding: 10px;
+  }
+  #WC-content .product_loop .product .product_image{
+    width: 110px;
+    height: 110px;
+  }
+  #WC-content .product_loop .product .button{
+    margin:16px 0;
+  }
+}

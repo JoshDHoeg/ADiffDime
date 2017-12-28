@@ -206,7 +206,7 @@
 
 @media only screen and (max-width: 768px) {
   .content-wrapper{
-    padding: 75px 0 0 0;
+    padding: 20px 0 0 0;
     margin: auto;
   }
   iframe{

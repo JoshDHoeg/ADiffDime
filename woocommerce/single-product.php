@@ -23,7 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php get_header( 'shop' ); ?>
 <div class="detail_wrapper">
 	<header class="detail_header">
-		<a  class="exitbtn right" href="/index.php/shop/"><img src="<?php echo get_template_directory_uri(); ?>/images/close.png" width="20px"></a>
 		<h1>Shop</h1>
 	</header>
 
@@ -52,7 +51,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_after_main_content' );
 	?>
   <div class="detail_footer">
-			<button type="button" class="close-btn" onclick="window.location.href='/index.php/shop/'">Close</button>
+			<!-- <button type="button" class="close-btn" onclick="window.location.href='/index.php/shop/'">Close</button> -->
 	</div>
 </div>
 <?php get_footer( 'shop' );

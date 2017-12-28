@@ -18,5 +18,5 @@
 ?>
 </ul>
 <div class="detail_footer">
-    <button type="button" class="close-btn" onclick="window.location.href='/'">Close</button>
+    <!-- <button type="button" class="close-btn" onclick="window.location.href='/'">Close</button> -->
 </div>
