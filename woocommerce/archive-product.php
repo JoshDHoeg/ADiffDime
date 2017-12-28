@@ -18,9 +18,9 @@
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
-}
-
-get_header( 'shop' ); ?>
+}?>
+<div id="particles-js"></div>
+<?php get_header( 'shop' ); ?>
 
 	<?php
 		/**

@@ -20,6 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }?>
 
+<div id="particles-js"></div> 
+
 <?php get_header( 'shop' ); ?>
 <div class="detail_wrapper">
 	<header class="detail_header">

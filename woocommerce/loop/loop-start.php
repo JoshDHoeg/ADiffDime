@@ -16,4 +16,4 @@
  * @version     2.0.0
  */
 ?>
-<ul class="product_loop container">
+<ul class="product_loop ">
