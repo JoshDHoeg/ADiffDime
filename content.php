@@ -12,11 +12,12 @@
 		endif;
 	?>
 		<a class="latest-posts-item-link" href="<?php echo esc_url( get_the_permalink() ); ?>" > <!--data-toggle="modal" data-target="#post-detail-<?php the_ID(); ?>"-->
-			<div class="latest-posts-item-content draw " style="background-image: url(<?php echo $urlImg; ?>);">
+			<div class="latest-posts-item-content draw" style="background-image: url(<?php echo $urlImg; ?>);">
 				<div class="latest-post-title">
 					<h1>
 						<?php the_title() ?>
 					</h1>
+					<img src="<?php echo $urlImg; ?>" class="latest-post-img-sm">
 				</div>
 			</div>
 		</a>

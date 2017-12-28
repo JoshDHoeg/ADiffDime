@@ -44,21 +44,29 @@
   opacity: 1;
   transition: ease-in-out 0.4s;
 }
-.latest-posts-item .latest-post-title-sm h1{
+.latest-posts-item .latest-post-title-sm h1, .latest-posts-item .latest-post-img-sm{
   display: none;
 }
 @media only screen and (max-width: 768px) {
   .latest-posts{
     padding: 20px 0px 20px 0px;
   }
-  .latest-post-title-sm h1{
+  .latest-post-title-sm h1, .latest-post-img-sm{
     display: block !important;
     font-size: 24px;
   }
   .latest-posts-item .latest-posts-item-content{
     height: auto;
   }
+  .latest-posts-item .latest-posts-item-content img{
+    width: 100%;
+    height: auto;
+  }
+  .latest-posts-item .latest-posts-item-content h1{
+    display: none;
+  }
   .latest-posts-item .latest-posts-item-content:hover h1{
     visibility: hidden;
+
   }
 }
