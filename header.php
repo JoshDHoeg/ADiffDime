@@ -35,7 +35,7 @@
 				<span class="hamburger hamburger-1"></span>
 				<span class="hamburger hamburger-2"></span>
 				<span class="hamburger hamburger-3"></span>
-				<span class="tooltiptext">Menu</span>
+				<span class="tooltiptext">Catagories</span>
 			</label>
 			<input type="checkbox" href="#" class="shop-menu-open" name="shop-menu-open" id="shop-menu-open"/>
 			<label class="menu-open-button" for="shop-menu-open" onclick="toggleSidenav(2);" id="shop-menu">
